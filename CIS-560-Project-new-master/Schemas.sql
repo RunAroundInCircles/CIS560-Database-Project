@@ -1,0 +1,20 @@
+﻿IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'Homebrew')
+BEGIN
+EXEC('CREATE SCHEMA Homebrew')
+END
+GO
+IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'List')
+BEGIN
+EXEC('CREATE SCHEMA List')
+END
+GO
+IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'Player')
+BEGIN
+EXEC('CREATE SCHEMA Player')
+END
+GO
+IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'Details')
+BEGIN
+EXEC('CREATE SCHEMA Details')
+END
+GO
